@@ -1,0 +1,12 @@
+/* pages/readme/readme.wxss */
+.title{
+  margin-top: 5rpx;
+  margin-bottom: 20rpx;
+  font-size: large;
+  color: #65c294;
+}
+
+.text{
+  font-size: small;
+  margin-bottom: 30rpx;
+}

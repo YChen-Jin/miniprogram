@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/swiper/swiper"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#65c294",
+    "navigationBarTitleText": "轮播图",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap46.json"
+}

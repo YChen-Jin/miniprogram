@@ -1,0 +1,19 @@
+<template>
+  <view>
+    <view>title在三秒钟后发生变化：{{title}}</view>
+  </view>
+</template>
+<script>
+import wepy from 'wepy'
+export default class Demo1  extends wepy.page{
+    data = {
+        title: "变化之前的title"
+    }
+    onLoad(){
+        setTimeout(() => {
+            this.title = '变化之后的title';
+            this.$apply();
+        }, 3000);
+    }
+}
+</script>

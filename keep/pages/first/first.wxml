@@ -1,0 +1,5 @@
+<!--pages/first/first.wxml-->
+<view>
+  <image src="/pages/assets/images/banner.bmp" mode="widthFix" style="width:100%"></image>
+  <button bindtap="startrun" style="width:100%">马上开始</button>
+</view>

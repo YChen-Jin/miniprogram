@@ -1,0 +1,11 @@
+/* pages/details/details.wxss */
+.text{
+  margin-top: 20rpx;
+  display:flex;
+  justify-content:center; /*居中*/
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+}

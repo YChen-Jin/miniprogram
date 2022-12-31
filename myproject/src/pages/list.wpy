@@ -1,0 +1,48 @@
+<style lang="less">
+.hello {
+   text-align: center;
+   height : 40px;
+}
+</style>
+
+ <template lang="wxml">
+  <view class="hello"> {{message}} </view>
+  <view class="array">
+   <button @tap="getArray()">显示LIST列表</button>
+  </view>
+  <repeat for="{{array}}" key="index" index="index" item="item">
+     <view> DeviceID:{{ item.DeviceID }}----DeviceClassId:{{ item.DeviceClassId}}----DevicePrice:{{ item.DevicePrice }}----DeviceName:{{ item.DeviceName }} </view>
+  </repeat>
+ </template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class ListTest extends wepy.page {
+    config = {};
+    components = {};
+
+    data = {
+      message : 'hello world',
+      array:[]
+    };
+
+    methods = {
+      getArray: async function () {
+        let self = this;
+        await wepy.request({
+        url:'http://192.168.1.128:8080/DeviceManage/findAllDevice',
+        header:{
+          ''Content-Type':'application/json'
+        }
+        success:function(res){
+          self.data=res.data.result
+          self.$apply();
+        }
+      });
+      }
+    };
+    events = {};
+    onLoad() {};
+  }
+</script>

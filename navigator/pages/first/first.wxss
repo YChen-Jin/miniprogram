@@ -1,0 +1,5 @@
+/* pages/first/first.wxss */
+.container{
+  padding: 0;
+  text-align: center;
+}

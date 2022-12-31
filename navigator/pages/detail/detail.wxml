@@ -1,0 +1,12 @@
+<view>
+   <view>
+        <text>名称：{{name}}</text>
+   </view>
+   <view>
+        <text>价格：{{price}}</text>
+   </view>
+  <!-- navigateBack返回 -->
+   <navigator open-type='navigateBack'>返回上一页</navigator>
+   <!-- 使用方法 -->
+   <button bindtap='navigateBack' style="width:100%">返回上一页</button>
+</view>

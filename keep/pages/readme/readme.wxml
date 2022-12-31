@@ -1,0 +1,11 @@
+<!--pages/readme/readme.wxml-->
+<view>
+  <view class="title">关于我的KEEP</view>
+  <view class="text">王宁，90后创业者，毕业于北京信息科技大学。追求极致产品设计和用户体验的双子偏执狂。运动爱好者，也是减肥成功者。希望可以通过“Keep”帮助更多的人爱上运动，科学运动，改善人们的运动生活方式。一直坚守的创业信条——“高筑墙、广积粮、缓称王”。</view>
+  <view class="title">锻炼顺序</view>
+  <view class="text">首先热身，然后进行专项肌肉训练，然后进入高频率肌肉锻炼，最后全身拉伸型锻炼。</view>
+  <view class="title">锻炼数量</view>
+  <view class="text">AAAAAAAAAAAAAAAAAAAAAAA</view>
+  <view class="title">锻炼方式</view>
+  <view class="text">BBBBBBBBBBBBBBBBBBBBBBB</view>
+</view>

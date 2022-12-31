@@ -1,0 +1,35 @@
+/* pages/first/first.wxss */
+.book-list{
+  margin-top: 0rpx;
+}
+
+.book-list .name{
+  margin-left: 100rpx;
+}
+
+.book-list .price{
+  margin-right: 200rpx;
+}
+
+.book-list .item{
+      border-bottom: 3px solid #eee;
+}
+.book-list .nav-item{
+  position: relative;
+  display: flex;
+  height:40px;
+  padding:10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*让中间的 flex为1 自适应长度*/
+.book-list .item .name{
+  flex:1;
+  font-size: 16px;
+}
+/*固定长度*/
+.book-list .item .arrow-r{
+  width:16px;
+  height:16px;
+}

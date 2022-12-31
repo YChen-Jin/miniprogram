@@ -1,0 +1,22 @@
+<template>
+  <view>
+    <view style="text-align:center">{{number}}</view>
+    <button  @tap="increase">
+        点击增加number
+    </button>
+  </view>
+</template>
+<script>
+import wepy from 'wepy'
+export default class Demo1  extends wepy.page{
+    data = {
+        number:0
+    }
+   methods = {
+       increase(){
+           this.number++
+           console.debug(this.number)
+       }
+   }
+}
+</script>

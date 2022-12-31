@@ -1,0 +1,20 @@
+<template>
+  <view>
+    <view>data属性中的a属性：{{a}}</view>
+    <view>计算属性aPlus：{{aPlus}}</view>
+  </view>
+</template>
+
+<script>
+import wepy from 'wepy'
+export default class Demo1  extends wepy.page{
+    data = {
+        a: 1
+    }
+    computed = {
+        aPlus () {
+            return this.a + 1
+        }
+    }
+}
+</script>

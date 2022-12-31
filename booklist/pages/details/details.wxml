@@ -1,0 +1,10 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <view>
+        <image style="background-color: #fff;" mode="aspectFit" src="{{details[id].picture}}"></image>
+        <view>
+          <text class="text">名称：{{details[id].name}}</text>
+          <text class="text">价格：￥{{details[id].price}}</text>
+        </view>
+    </view>
+</view>

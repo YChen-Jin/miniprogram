@@ -1,0 +1,20 @@
+<template>
+  <view>
+      <repeat for="{{titleList}}" key="index" index="index" item="item">
+          <child :ctitle="item"></child>
+      </repeat>
+  </view>
+</template>
+
+<script>
+import wepy from 'wepy'
+import Child from '@/components/child'
+export default class Demo3  extends wepy.page{
+    data = {
+        titleList:["网页设计与开发","Vue企业开发实战","微信小程序开发实战"] 
+    }
+    components = {
+        child:Child
+    }
+}
+</script>

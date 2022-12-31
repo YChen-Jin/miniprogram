@@ -1,0 +1,16 @@
+<template>
+  <view>
+    <view>{{ctitle}}</view>
+  </view>
+</template>
+<script>
+import wepy from 'wepy'
+export default class Child  extends wepy.component{
+    props = {
+        ctitle:{
+            type:String,
+            default: 'null'
+        }
+    }
+}
+</script>

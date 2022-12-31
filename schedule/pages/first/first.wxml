@@ -1,0 +1,11 @@
+<view>
+  <input class="input-wrap" type='text' placeholder='添加一个任务' bindinput='getval' value='{{val}}'/>
+  <button bindtap='add'>添加</button>
+
+  <view  wx:for="{{lists}}" wx:key="index"  class="list-wrap" >
+    <text>{{index+1}}、{{item}}</text>
+    <button size='mini' bindtap='del' data-index="{{index}}" class="delbtn">删除</button>
+  </view>
+
+</view>
+

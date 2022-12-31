@@ -1,0 +1,41 @@
+<view style="margin-left:15px">填写信息</view>
+
+<!-- 姓名 -->
+  <view class="weui-cell" style="height:40rpx">
+    <label class="weui-lable" style="flex:1">姓名:</label>
+    <input class="weui-input" style="flex:4" type="" placeholder="请输入姓名"/>
+  </view>
+
+  <!-- 性别 怎么不用按钮自动获取？可以直接在 js的data里设置haveUserInfo:true 但是不推荐使用-->
+  <view class="weui-cell" style="height:40rpx">
+    <label class="weui-lable" style="flex:1">性别:</label>
+    <lable wx:if="{{haveUserInfo}}" style="flex:1" >{{userInfo}}</lable>
+    <button class="btn-user"
+    wx:if="{{canIUse}}"
+    open-type="getUserInfo"
+    bindgetuserinfo="bindGetUserInfo"
+  >
+    获取用户信息
+  </button>
+  </view>
+
+  <!-- 位置 -->
+  <view class="weui-cell" style="height:40rpx">
+    <label class="weui-lable" style="flex:1">位置:</label>
+    <label class="weui-lable" style="flex:4">{{address}}</label>
+  </view>
+
+  <!-- 人脸采集 -->
+    <view class="weui-cell" style="height:40rpx">
+    <label class="weui-lable" style="flex:1">人脸采集:</label>
+    <button class="button-style" bindtap='chooseImage'>请点击上传人脸照片</button>
+  </view>
+
+  <!-- 头像上传框 -->
+<view class="weui-cell" style="height:200rpx">
+  <image-loader class="avatar" default-image='../imgs/add.png' mode='scaleToFill' original-image="{{imgsrc[0]}}" />
+</view>
+
+<view class="weui-button-area">
+  <button class="weui-button" type="submit">提交</button>
+</view>

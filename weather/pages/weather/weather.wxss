@@ -1,0 +1,48 @@
+.container{
+ color: #fff;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.weather{
+  color: #fff;
+  font-size: 60rpx;
+  margin-top:50rpx;
+}
+.city{
+  font-size: 32rpx;
+  margin: 10rpx;
+}
+.temperature{
+  font-size: 180rpx;
+  margin: 20rpx;
+  font-weight: 800;
+}
+.week-item{
+  margin-top: 300rpx;
+  width: 100%;
+}
+.week-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5fc8ff;
+  margin-top:20rpx;
+}
+.week-list .week{
+  flex:2;
+  text-align: left;
+  padding-left: 50rpx;
+}
+.week-list .icon{
+  flex:1;
+}
+.week-list .temp{
+  flex:2;
+  text-align: center;
+}
+

@@ -1,0 +1,22 @@
+/* pages/first/first.wxss */
+.button-style{
+  color: grey;
+  background-color:transparent;
+  border:0 none;
+  margin-right: 120rpx;
+  font-size:40rpx;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.btn-user{
+  color: grey;
+  background-color:transparent;
+  border:0 none;
+  margin-right: 5rpx;
+  font-size:40rpx;
+}

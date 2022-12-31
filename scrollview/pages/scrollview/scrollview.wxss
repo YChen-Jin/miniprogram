@@ -1,0 +1,29 @@
+/* pages/scrollview/scrollview.wxss */
+
+.box {
+  width:100%;
+  height: 100rpx;
+  white-space: nowrap;        /*设置不换行*/
+  border: 3px solid white;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+
+.box-item {
+  width: 30%;
+  height:100%;
+  border:3rpx solid white;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 45rpx;
+  text-align:center;
+}
+.box-text{
+  margin-top: 10rpx;
+}
+
+page {
+  /* 设置背景色 */
+  background-color: #eee; 
+}
+

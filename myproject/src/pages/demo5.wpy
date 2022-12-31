@@ -1,0 +1,61 @@
+<template>
+  <view class="container">
+    <canvas canvas-id="lineCanvas" style="width:100%;height:200px;"></canvas>
+  </view>
+</template>
+<script>
+import wxCharts from '@/utils/wxcharts-min.js';
+import wepy from 'wepy';
+
+export default class Home extends wepy.page {
+  onLoad() {
+    // var windowWidth = 320;
+    // try {
+    //   var res = wx.getSystemInfoSync();
+    //   windowWidth = res.windowWidth;
+    // } catch (e) {
+    //   console.error('getSystemInfoSync failed!');
+    // }
+
+    var simulationData = {
+      categories: ['2014', '2015', '2016', '2017', '2018'],
+      data: [631.85, 242.77, 678.15, 18737.6,3619.7]
+    };
+    var lineChart = new wxCharts({
+      canvasId: 'lineCanvas',
+      type: 'line',
+      background:"#faa",
+      categories: simulationData.categories,
+      animation: true,
+      series: [
+        {
+          name: '比特币',
+          data: simulationData.data,
+          format: function(val, name) {
+            return val.toFixed(2) + '万';
+          }
+        }
+      ],
+      xAxis: {
+        disableGrid: true
+      },
+      yAxis: {
+        title: '价格（美元）',
+        format: function(val) {
+          return val.toFixed(2);
+        },
+        min: 0
+      },
+      width: 320,
+      height: 200,
+      dataLabel: true,
+      dataPointShape: true,
+      extra: {
+        lineStyle: 'straight'
+      }
+    });
+  }
+}
+</script>
+<style lang="less" scoped>
+</style>

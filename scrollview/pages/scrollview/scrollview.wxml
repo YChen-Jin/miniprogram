@@ -1,0 +1,9 @@
+<!--pages/scrollview/scrollview.wxml-->
+<!-- <text>横向滚动</text> -->
+<scroll-view class="box" scroll-x="true" >
+  <view class="box-item" wx:for="{{messages}}">
+    <view class="box-text">
+      <view>{{item.message}}</view>
+    </view>
+  </view>
+</scroll-view>

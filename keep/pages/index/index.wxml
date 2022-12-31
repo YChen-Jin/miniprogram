@@ -1,0 +1,10 @@
+<view class="container">
+  <view>
+    <text>预备，开始！</text>
+    <text>{{index+1}}/{{runname.length}} {{runname[index]}}</text>
+  </view>
+  <image class="action" src="{{imglist[index]}}" mode="aspectFit"></image>
+  <view class="time">
+    <text>{{count}}</text>
+  </view>
+</view>

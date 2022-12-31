@@ -1,0 +1,17 @@
+<!--pages/weather/weather.wxml-->
+<view class='container'>
+<image class='bg' mode='widthFix' src='../public/imgs/qntq-bg.png'></image>
+  <text class='weather'>{{weather}}</text>
+  <text class='city'>{{city}}{{area}}</text>
+  <text class='temperature'>{{temperature}}</text>
+  <view class="week-item">
+    <view class="week-list" wx:for="{{weeks}}" wx:for-item="w" wx:key="index">
+      <view class="week">{{w.week}}</view>
+      <view class="icon">   
+    <image wx:if="{{w.weather=='晴'}}" src="../public/imgs/sun.png" mode="widthFix" style='width:50rpx'></image>
+    <image wx:else src="../public/imgs/cloud.png" mode="widthFix" style='width:50rpx'></image>
+    </view>
+      <view class="temp">{{w.temp.highest}}~{{w.temp.lowest}}C</view>
+    </view>
+  </view>
+</view>

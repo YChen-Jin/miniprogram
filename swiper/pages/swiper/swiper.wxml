@@ -1,0 +1,20 @@
+<!--pages/swiper/swiper.wxml-->
+<!-- <text>pages/swiper/swiper.wxml</text> -->
+<view>
+  <swiper
+  indicator-dots
+  indicator-color="#fff"
+  indicator-active-color="#65c294"
+  autoplay
+  interval="1000"
+  circular>
+  <!-- 不知道如何解决宽度不能全部填充问题 -->
+    <block wx:for="{{banner}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image src="{{item.url}}" mode="scaleToFill" style="display: block width: 100%"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

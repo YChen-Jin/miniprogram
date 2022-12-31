@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/scrollview/scrollview"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#65c294",
+    "navigationBarTitleText": "制作滚动导航栏",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff"
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap31.json"
+}

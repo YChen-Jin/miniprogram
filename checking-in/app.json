@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/first/first"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "考勤注册",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置获取"
+    }
+  },
+  "sitemapLocation": "sitemap43.json"
+}

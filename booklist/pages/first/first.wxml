@@ -1,0 +1,10 @@
+<view class="book-list"  data-index="{{index}}" data-name="{{item.name}}" data-price="{{item.price}}">
+    <view wx:for="{{book}}"  class="item">
+        <navigator url="./../details/details?id={{index}}">
+            <view class="nav-item">
+                <text class="name">{{item.name}}</text><text class="price">{{item.price}}</text>
+                <image class="arrow-r" src="../public/imgs/arrowright.png" background-size="cover" />
+            </view>
+        </navigator>
+    </view>
+  </view>

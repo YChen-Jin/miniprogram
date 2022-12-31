@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/first/first",
+    "pages/readme/readme",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的KEEP运动",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#a1a1a1",
+    "selectedColor":"rgb(108,205,250)",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "./pages/assets/icons/sport.png",
+      "selectedIconPath": "./pages/assets/icons/sport-active.png",
+      "text":"运动"
+    },
+    {
+      "pagePath": "pages/readme/readme",
+      "iconPath": "./pages/assets/icons/my.png",
+      "selectedIconPath": "./pages/assets/icons/my-active.png",
+      "text":"了解keep"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
